@@ -1,0 +1,14 @@
+mat-list-item *{
+  color: black;
+}
+mat-icon{
+  margin-right: 10px;
+}
+.icon-cont{
+      justify-content: end;
+    align-items: center;
+}
+.lsitems-item{
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}

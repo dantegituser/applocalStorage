@@ -1,0 +1,20 @@
+<h2>Items in Storage:</h2>
+<div class="items-cont">
+  <div *ngIf="items.length === 0">Storage is empty</div>
+  <div class="lsitems-item" *ngFor="let item of items" fxLayout>
+    <div class="col-8">
+      <div>
+        <mat-icon>local_offer</mat-icon>Title: <strong>{{item.title}}</strong><br>
+      </div>
+      <div>
+       <mat-icon>edit</mat-icon> Text: <strong>{{item.text}}</strong>
+      </div>
+    </div>
+    <div class="col-4 icon-cont" style="flex:1;" fxLayout>
+      <mat-icon (click)="onDelete(item.id)" style="color:red;">delete</mat-icon>
+    </div>
+  </div>
+
+
+
+</div>

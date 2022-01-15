@@ -1,0 +1,7 @@
+mat-form-field{
+  background-color: rgb(226, 241, 250);
+}
+mat-form-field input,
+.mat-form-field-label{
+  color: black!important;
+}

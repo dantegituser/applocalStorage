@@ -1,0 +1,19 @@
+<h2>Add item</h2>
+<form
+(ngSubmit)="onSubmit()"
+[formGroup]="addform" class="example-form" fxLayout="column" fxLayoutGap="10px">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label style="color:black">Title</mat-label>
+    <input formControlName="title" type="tel" matInput placeholder="555-555-1234">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+    <mat-error>This field must have content</mat-error>
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label style="color:black">Text</mat-label>
+    <input formControlName="text" type="tel" matInput placeholder="555-555-1234">
+    <mat-icon matSuffix>mode_edit</mat-icon>
+    <mat-error>This field must have content</mat-error>
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary">Add Item</button>
+  <button type="reset" mat-raised-button color="accent">Reset</button>
+</form>
